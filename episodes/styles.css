@@ -1,0 +1,84 @@
+
+body {
+    background-color: #024b5f;
+
+}
+
+h1{
+    display: flex; 
+    justify-content: center;
+    font-size:128px;
+    font-family: rickandmorty;    
+    -webkit-text-stroke: 0.1px #A3D12A;
+    color: #00AEC4;
+    padding:0;
+    margin:0;
+}
+
+ol, li {
+    list-style-type: none;
+}
+
+img {
+    width:300px;
+    height:400px;
+}
+ol {
+    display: flex; /* Display the list as a flex container */
+    flex-wrap: wrap; /* Wrap the list items onto multiple lines */
+  
+}
+li{
+    display:flex; /* Display the list items as inline blocks */
+    width: 33%; /* Set the width to 33% (three items per line) */
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Center the text within the list items */
+    color: #00AEC4;
+    font-family: rickandmorty;
+    font-size:64px;
+    margin:5% 0;
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-position: center; 
+    transition:all 0.3s;
+ 
+
+  }
+
+  li:hover {
+    text-shadow: 0 0 10px rgba(0,0,0,0.5), 0 0 10px #1fcd39;
+    cursor:pointer;
+    transform: scale(1.1);
+  }
+
+a {
+    text-decoration: none;
+    -webkit-text-stroke: 0.1px #A3D12A;
+    color: #00AEC4; ;
+ 
+
+}
+a:visited { 
+    -webkit-text-stroke: 0.1px #A3D12A;
+    color: #00AEC4;
+}
+
+@font-face {
+    font-family: getSwchifty;
+    src: url("/fonts/get_schwifty__a_rick_and_morty_font_by_jonizaak-dajw4u8.ttf");
+}
+
+@font-face {
+    font-family: adultswim;
+    src: url("/fonts/_adult_swim_font__by_esteveztheart-dbj9by8.ttf");
+}
+
+@font-face {
+    font-family: rickandmorty;
+    src: url("/fonts/rick_and_morty_by_shittychan-d9h2vl6.ttf");
+}
+
+@font-face {
+    font-family: regular;
+    src: url("./fonts/Calligraphr-Regular.ttf");
+}
