@@ -15,6 +15,20 @@ h1{
     margin:0;
 }
 
+#previous {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:32px;
+    height:32px;
+    transition: all 0.3s ease-in-out;
+}
+
+#previous:hover {
+    filter: brightness(70%); 
+    transform: scale(1.1);
+}
+
 ol, li {
     list-style-type: none;
 }
