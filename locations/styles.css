@@ -5,8 +5,8 @@ body {
 }
 #container {
     display:grid;
-    grid-template-columns: 1fr 1fr;
- 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:12px;
 }
 h1{
     display: flex; 
@@ -19,37 +19,6 @@ h1{
     margin:0;
 }
 
-#side-content {
-    font-family: rickandmorty;    
-    -webkit-text-stroke: 0.1px #A3D12A;
-    color: #00AEC4;
-    font-size:64px;
-    cursor: pointer;
-
-
-}
-
-
-
-#main-content {
-    font-family: rickandmorty;    
-    -webkit-text-stroke: 0.1px #A3D12A;
-    color: #00AEC4;
-    font-size:32px;
-    justify-content: space-around;
-}
-
-a {
-    text-decoration: none;
-    -webkit-text-stroke: 0.1px #A3D12A;
-    color: #00AEC4; ;
- 
-
-}
-a:visited { 
-    -webkit-text-stroke: 0.1px #A3D12A;
-    color: #00AEC4;
-}
 
 @font-face {
     font-family: getSwchifty;

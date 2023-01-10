@@ -5,7 +5,7 @@ let allResults = [];
 async function getCharacters() {
   const response = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
   const data = await response.json();
-
+  console.log(data);
   allResults = allResults.concat(data.results);
 
   for (let i = 0; i < allResults.length; i++) {
@@ -49,18 +49,7 @@ async function getCharacters() {
 
 getCharacters();
 
-// create search bar
-// const searchBar = document.createElement('input');
-// searchBar.setAttribute('type', 'text');
-// searchBar.setAttribute('placeholder', 'Search for a character...');
-// searchBar.className= "search";
-// header.appendChild(searchBar);
 
-// // create search button
-//   const searchButton = document.createElement('button');
-//   searchButton.innerHTML = 'Search';
-//   searchBar.className= "search";
-// header.appendChild(searchButton);
 const searchButton = document.getElementById('search-button');
 const searchBar = document.getElementById('search-bar');
 const searchResults = document.createElement('div');
