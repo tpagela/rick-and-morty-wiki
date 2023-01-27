@@ -1,6 +1,6 @@
 
 body {
-    background-color: #615677;
+    background-color: #5b429783;
 
 }
 
@@ -9,8 +9,8 @@ h1{
     justify-content: center;
     font-size:128px;
     font-family: rickandmorty;    
-    -webkit-text-stroke: 0.1px #A3D12A;
-    color: #00AEC4;
+    -webkit-text-stroke: 0.1px #826ec2;
+    color: #f8fcfb;
     padding:0;
     margin:0;
 }
@@ -48,7 +48,7 @@ li{
     align-items: center;
     flex-direction: column;
     text-align: center; /* Center the text within the list items */
-    color: #00AEC4;
+
     font-family: rickandmorty;
     font-size:64px;
     margin:5% 0;
@@ -60,21 +60,21 @@ li{
   }
 
   li:hover {
-    text-shadow: 0 0 10px rgba(0,0,0,0.5), 0 0 10px #1fcd39;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5), 0 0 10px #574a81;
     cursor:pointer;
     transform: scale(1.1);
   }
 
 a {
     text-decoration: none;
-    -webkit-text-stroke: 0.1px #A3D12A;
-    color: #00AEC4; ;
+    -webkit-text-stroke: 0.1px #826ec2;
+    color: #f8fcfb; ;
  
 
 }
 a:visited { 
-    -webkit-text-stroke: 0.1px #A3D12A;
-    color: #00AEC4;
+    -webkit-text-stroke: 0.1px #826ec2;
+    color: #f8fcfb;
 }
 
 @font-face {

@@ -1,6 +1,6 @@
 
 body {
-    background-color: #007B9C;
+    background-color: #5b429783;
 
 }
 #container {
@@ -13,13 +13,15 @@ h1{
     justify-content: center;
     font-size:128px;
     font-family: rickandmorty;    
-    -webkit-text-stroke: 0.1px #A3D12A;
-    color: #00AEC4;
+    -webkit-text-stroke: 0.1px #826ec2;
+    color: #f8fcfb;
     padding:0;
     margin:0;
 }
 
-
+.sub-container {
+    font-family:adultswim;
+}
 @font-face {
     font-family: getSwchifty;
     src: url("/fonts/get_schwifty__a_rick_and_morty_font_by_jonizaak-dajw4u8.ttf");

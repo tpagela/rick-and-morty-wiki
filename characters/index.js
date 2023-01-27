@@ -1,7 +1,6 @@
 let page = 1;
 let allResults = [];
 
-
 async function getCharacters() {
   const response = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
   const data = await response.json();
@@ -10,8 +9,8 @@ async function getCharacters() {
 
   for (let i = 0; i < allResults.length; i++) {
     const characterDiv = document.createElement('div');
-  characterDiv.className = "sub-container";
-  characterDiv.id = allResults[i].name;
+    characterDiv.className = "sub-container";
+    characterDiv.id = allResults[i].name;
   
     const nameDiv = document.createElement('div');
     nameDiv.id = 'name';
@@ -33,21 +32,58 @@ async function getCharacters() {
     originDiv.innerHTML = "Origin: " + allResults[i].origin.name;  
     characterDiv.appendChild(originDiv);
     
+    // Create the actual image and add a placeholder 
     const imageDiv = document.createElement('img');
     imageDiv.id = 'image';
-    imageDiv.src = allResults[i].image;
+    imageDiv.src = '/media/download.png';
+    imageDiv.setAttribute('data-src', allResults[i].image);
+    imageDiv.classList.add('lazy-image');
     characterDiv.appendChild(imageDiv);
   
     document.querySelector('#container').appendChild(characterDiv);
   }
- 
+
   if (data.info.next) {
     page++;
     getCharacters();
   }
+  
+  // Select all lazy images
+  const lazyImages = document.querySelectorAll('.lazy-image');
+
+  // Create the observer
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        // Get the src from the data-src attribute
+        const src = img.getAttribute('data-src');
+        if (!src) {
+          return;
+        }
+
+        // Set the src and remove the data-src attribute
+        img.src = src;
+        img.removeAttribute('data-src');
+        img.classList.remove('lazy-image');
+
+        // Stop observing the image
+        observer.unobserve(img);
+      }
+    });
+  });
+
+  // Start observing the images
+  lazyImages.forEach(img => {
+    observer.observe(img);
+  });
 }
 
 getCharacters();
+
+
+
+
 
 
 const searchButton = document.getElementById('search-button');
@@ -64,8 +100,7 @@ const backButton = document.createElement('button');
 backButton.id = 'back-button';
 backButton.innerHTML = 'Back';
 backButton.style.position = 'absolute';
-backButton.style.top = '320px';
-backButton.style.left = '190px';
+backButton.style.top = '5px';
 backButton.style.display = 'none';
 container.appendChild(backButton);
 
@@ -186,26 +221,5 @@ searchButton.addEventListener('click', function() {
  backButton.style.display = 'block'; // show the back button when the search results are displayed
 });
 
-// const imageContainers = document.querySelectorAll('.sub-container');
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       // the element is now visible in the viewport
-//       // load the image
-//       const imageElement = entry.target.querySelector('img');
-//       imageElement.src = imageElement.dataset.src;
-
-//       // remove the observer for the current element
-//       observer.unobserve(entry.target);
-//     }
-//   });
-// });
-
-// imageContainers.forEach((container) => {
-//   const imageElement = container.querySelector('img');
-//   imageElement.setAttribute('data-src', imageElement.src);
-//   imageElement.src = ''; // set the src to an empty string to prevent the image from loading immediately
-//   observer.observe(container);
-// });
 
