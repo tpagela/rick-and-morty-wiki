@@ -74,23 +74,22 @@ p {
 #previous:hover {
     filter: brightness(70%); 
     transform: scale(1.1);
-}
-@font-face {
+}@font-face {
     font-family: getSwchifty;
-    src: url("/fonts/get_schwifty__a_rick_and_morty_font_by_jonizaak-dajw4u8.ttf");
+    src: url("../fonts/get_schwifty__a_rick_and_morty_font_by_jonizaak-dajw4u8.ttf");
 }
 
 @font-face {
     font-family: adultswim;
-    src: url("/fonts/_adult_swim_font__by_esteveztheart-dbj9by8.ttf");
+    src: url("../fonts/_adult_swim_font__by_esteveztheart-dbj9by8.ttf");
 }
 
 @font-face {
     font-family: rickandmorty;
-    src: url("/fonts/rick_and_morty_by_shittychan-d9h2vl6.ttf");
+    src: url("../fonts/rick_and_morty_by_shittychan-d9h2vl6.ttf");
 }
 
 @font-face {
     font-family: regular;
-    src: url("./fonts/Calligraphr-Regular.ttf");
+    src: url("../fonts/Calligraphr-Regular.ttf");
 }
