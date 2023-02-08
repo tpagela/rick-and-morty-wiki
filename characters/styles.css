@@ -53,6 +53,7 @@ h1{
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+  padding:20px;
 }
 
 #search-results #name {
