@@ -1,190 +1,190 @@
 
 body {
-    background-image: url("./media/4rpeu19p6gk81.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin:0;
-    padding:0;
-    /* Add a repeating radial gradient as the background image */
- 
+  background-image: url("./media/4rpeu19p6gk81.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  /* Add a repeating radial gradient as the background image */
+
 
 }
 
 /* Define the @keyframes rule for the shooting star animation */
 @keyframes shooting-star {
-    /* Set the starting position of the shooting star */
-    0% {
-      /* Set the top and left position of the shooting star to the upper right corner of the screen */
-      top: 0%;
-      left: 90%;
-    }
-    /* Set the ending position of the shooting star */
-    100% {
-      /* Set the top and left position of the shooting star to the bottom left corner of the screen */
-      top: 100%;
-      left: -50%;
-    }
+  /* Set the starting position of the shooting star */
+  0% {
+    /* Set the top and left position of the shooting star to the upper right corner of the screen */
+    top: 0%;
+    left: 90%;
   }
-  .shooting-star {
-    /* Set the animation name, duration, and timing function */
-    animation: shooting-star 60s linear infinite;
-    /* Set the position of the shooting star to absolute */
-    position: absolute;
-    height:150px;
-  }  
+  /* Set the ending position of the shooting star */
+  100% {
+    /* Set the top and left position of the shooting star to the bottom left corner of the screen */
+    top: 100%;
+    left: -50%;
+  }
+}
+.shooting-star {
+  /* Set the animation name, duration, and timing function */
+  animation: shooting-star 60s linear infinite;
+  /* Set the position of the shooting star to absolute */
+  position: absolute;
+  height:150px;
+}  
 #container {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
 
- 
+
 }
 ul, li {
-    list-style: none;
-    margin:0;
-    padding:0;
+  list-style: none;
+  margin:0;
+  padding:0;
 }
 h1{
-    display: flex; 
-    justify-content: center;
-    font-size:132px;
-    font-family: rickandmorty;    
-    -webkit-text-stroke: 0.1px #ab78c3 !important;
-    color: #faffec;
-    padding:0;
-    margin:0;
+  display: flex; 
+  justify-content: center;
+  font-size:132px;
+  font-family: rickandmorty;    
+  -webkit-text-stroke: 0.1px #ab78c3 !important;
+  color: #faffec;
+  padding:0;
+  margin:0;
 
-   
+ 
 }
 
 
 .sidebar {
-    font-family: rickandmorty;   
-    float:left;
-    height:100%;
-    border-radius: 8px;
-    font-size:64px;
-    height:fit-content;
+  font-family: rickandmorty;   
+  float:left;
+  height:100%;
+  border-radius: 8px;
+  font-size:64px;
+  height:fit-content;
 
 
 
 }
 #episodes, #characters, #locations {
-    transition: all 0.2s ease-in-out;
-    width:max-content;
-    padding-left:32px;
+  transition: all 0.2s ease-in-out;
+  width:max-content;
+  padding-left:32px;
 
 }
 
 #episodes:hover, #characters:hover, #locations:hover {
-    -webkit-text-stroke: 0.1px #8676bc;
-    color:  #f8fcfb;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5), 0 0 10px #ffffff;
-  cursor:pointer;
-  transform: scale(1.1);
+  -webkit-text-stroke: 0.1px #8676bc;
+  color:  #f8fcfb;
+text-shadow: 0 0 10px rgba(0,0,0,0.5), 0 0 10px #ffffff;
+cursor:pointer;
+transform: scale(1.1);
 
-  
+
 
 }
 
 #gif {
-    width:65%;
-    justify-content: center;
-    align-items: center;
+  width:65%;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
-    font-family: adultswim  ;
-    font-size:28px;
-    
+  font-family: adultswim  ;
+  font-size:28px;
+  
 }
 a {
-    text-decoration: none;
-    -webkit-text-stroke: 0.1px #8676bc;
-    color: #f8fcfb;
-    width:fit-content;
-    cursor:default;
- 
+  text-decoration: none;
+  -webkit-text-stroke: 0.1px #8676bc;
+  color: #f8fcfb;
+  width:fit-content;
+  cursor:default;
+
 
 }
 a:visited { 
-    -webkit-text-stroke: 0.1px #8676bc;
-    color: #f8fcfb;
-    cursor:default;
+  -webkit-text-stroke: 0.1px #8676bc;
+  color: #f8fcfb;
+  cursor:default;
 }
 #intro , #desc{
-    font-family: adultswim;
-    color:#f8fcfb;
+  font-family: adultswim;
+  color:#f8fcfb;
 }
 
 #main-content {
-    font-family: getSwchifty;    
-    -webkit-text-stroke: 0.1px #8676bc;
-    color: #f8fcfb;
-    font-size:32px;
-    height:fit-content;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: getSwchifty;    
+  -webkit-text-stroke: 0.1px #8676bc;
+  color: #f8fcfb;
+  font-size:32px;
+  height:fit-content;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
 footer {
 
-  background-color: #1d1836;
-  padding: 32px;
-  text-align: center;
-  color: white;
+background-color: #1d1836;
+padding: 32px;
+text-align: center;
+color: white;
 }
-  
+
 
 
 
 @font-face {
-    font-family: getSwchifty;
-    src: url("./fonts/get_schwifty__a_rick_and_morty_font_by_jonizaak-dajw4u8.ttf");
+  font-family: getSwchifty;
+  src: url("./fonts/get_schwifty__a_rick_and_morty_font_by_jonizaak-dajw4u8.ttf");
 }
 
 @font-face {
-    font-family: adultswim;
-    src: url("./fonts/_adult_swim_font__by_esteveztheart-dbj9by8.ttf");
+  font-family: adultswim;
+  src: url("/fonts/_a.dult_swim_font__by_esteveztheart-dbj9by8.ttf");
 }
 
 @font-face {
-    font-family: rickandmorty;
-    src: url("./fonts/rick_and_morty_by_shittychan-d9h2vl6.ttf");
+  font-family: rickandmorty;
+  src: url("./fonts/rick_and_morty_by_shittychan-d9h2vl6.ttf");
 }
 
 @font-face {
-    font-family: regular;
-    src: url("./fonts/Calligraphr-Regular.ttf");
+  font-family: regular;
+  src: url("./fonts/Calligraphr-Regular.ttf");
 }
 
 .image-container {
-    width: 50%; /* Set the width to 50% */
-    height: 300px; /* Set the height to match the size of the image */
-    overflow: hidden; /* Hide any parts of the image that are outside the boundaries of the div */
-  }
+  width: 50%; /* Set the width to 50% */
+  height: 300px; /* Set the height to match the size of the image */
+  overflow: hidden; /* Hide any parts of the image that are outside the boundaries of the div */
+}
 
-  .image-container.left {
-    background-image: url('./media/rick-and-morty-6344804_960_720.jpg'); /* Set the image as the background */
-    background-position: center right; /* Position the image to the right of the div */
-  }
+.image-container.left {
+  background-image: url('./media/rick-and-morty-6344804_960_720.jpg'); /* Set the image as the background */
+  background-position: center right; /* Position the image to the right of the div */
+}
 
-  .image-container.right {
-    background-image: url('./media/rick-and-morty-6344804_960_720.jpg'); /* Set the image as the background */
-    background-position: center left; /* Position the image to the left of the div */
-  }
+.image-container.right {
+  background-image: url('./media/rick-and-morty-6344804_960_720.jpg'); /* Set the image as the background */
+  background-position: center left; /* Position the image to the left of the div */
+}
 
-  .image-container.animation {
-    animation: move 2s;
-  }
+.image-container.animation {
+  animation: move 2s;
+}
 
-  
+
 @keyframes move {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
+  from {
+    transform: translateX(-100%);
   }
+  to {
+    transform: translateX(0%);
+  }
+}

@@ -5,7 +5,7 @@ for (const link of seasonLinks) {
     event.preventDefault();
 
     const season = event.target.dataset.season;
-    const url = `./season/index.html?season=${season}`;
+    const url = `../season/index.html?season=${season}`;
 
     window.location = url;
   });

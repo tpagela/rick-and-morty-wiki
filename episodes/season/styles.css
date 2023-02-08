@@ -74,7 +74,8 @@ p {
 #previous:hover {
     filter: brightness(70%); 
     transform: scale(1.1);
-}@font-face {
+}
+@font-face {
     font-family: getSwchifty;
     src: url("../fonts/get_schwifty__a_rick_and_morty_font_by_jonizaak-dajw4u8.ttf");
 }
